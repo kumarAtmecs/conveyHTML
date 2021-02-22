@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS over Bootstrap 4.6 -->
+    <link rel="stylesheet" href="/css/main.css">
+
+    <title>Registration</title>
+  </head>
+
+
+  <body class="d-flex flex-column h-100">
+    
+    
+    <header>     
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white shadow-sm">
+          <div class="container">          
+                <!-- Brand Logo goes here -->
+                <a class="navbar-brand d-inline-flex" href="#">
+                  <img src="/img/Convey-logo.png" alt="convey-logo" width="150">
+                  <div class="logo-secure align-self-center text-dark">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    Secure
+                  </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- collapseble content goes here -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <div class="ml-auto">
+                      <div class="col-md-12 d-inline-flex">
+                        <span class="align-self-center">language preference:</span>
+                        <div class="dropdown">
+                          <button class="btn btn-link text-dark font-weight-bold text-decoration-none dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            English
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                        <span class="align-self-center pl-3">enlarge text:</span>
+                        <a href="#" class="align-self-center h4 pl-1 text-dark">
+                        <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="align-self-center h4 pl-1 text-dark">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                      </a>
+                      </div>
+                
+                      <div class="col-md-12 my-3">
+                    <ul class="navbar-nav pl-4">
+                      <li class="nav-item d-inline-flex">
+                        <span class="align-self-center">Questions?</span>
+                        <div class="dropdown">
+                          <button class="btn btn-link font-weight-bold text-decoration-none dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            24/7 Help
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="nav-item ">              
+                        <div class="logo-secure align-self-center h5">
+                          Shop as a guest
+                        </div>        
+                      </li>   
+                    </ul>
+                  </div>
+                  </div>      
+                </div>
+          </div>
+        </nav>    
+    </header>
+    
+    <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0 pt-5 mt-5">
+      <div class="container pt-4">
+        <h1 class="text-dark font-weight-bold display-4 my-4 pt-4">Register</h1>
+        <h2 class="font-weight-bold">Welcome! Lets get started.</h2>
+        <p>Please complete the 4 steps below to get set up.</p>
+
+        <div class="row">
+            <div class="col-md-7 mb-4">
+              <!-- Registrations Steps goes here -->
+              <div id="registrationSteps">
+
+                <!-- 1. Policy Information  -->
+                <div class="card card-steps rounded-0 shadow-sm my-3">
+                  
+                    <h5 class="mb-0" id="headingOne">
+                      <button class="btn btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="row p-3">
+                          <div class="col-1 h1 font-weight-bold line-height-1">1</div>
+                          <div class="col-9 text-left">
+                            <p class="h2 font-weight-bold text-dark mb-1">Policy Information</p>
+                            <span>Body copy</span>
+                          </div>
+                          <div class="col-2 align-self-center">
+                            <b class="text-primary">Edit</b>
+                          </div>
+                        </div>                        
+                      </button>
+                    </h5>                  
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#registrationSteps">
+                    <div class="card-body">
+                      <div class="row border-top">
+                      <div class="col-8 p-0 pt-4">
+                      <div class="form-group">
+                        <label for="fname" class="sr-only">First name</label>
+                        <input type="text" class="form-control form-control-lg" id="fname" placeholder="First name" name="fname">
+                      </div>
+                      <div class="form-group">
+                        <label for="lname" class="sr-only">Last name</label>
+                        <input type="text" class="form-control form-control-lg" id="lname" placeholder="Last name" name="lname">
+                      </div>
+                      <div class="form-group">
+                        <label for="mID" class="sr-only">Member ID</label>
+                        <input type="text" class="form-control form-control-lg" id="mID" placeholder="Member ID" name="mID">
+                        <p class="pt-1"><i class="fa fa-info-circle" aria-hidden="true"></i> Where can I find this?</p>
+                      </div>
+                      
+
+                      <button type="submit" class="btn btn-dark btn-lg py-3 px-4 mt-4">Submit</button>
+                    </div></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 2. Street address -->
+                <div class="card card-steps rounded-0 shadow-sm my-3">
+                  
+                    <h5 class="mb-0" id="headingTwo">
+                      <button class="btn btn-block collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="row p-3">
+                          <div class="col-1 h1 font-weight-bold line-height-1">2</div>
+                          <div class="col-9 text-left">
+                            <p class="h2 font-weight-bold text-dark mb-1">Personal Information</p>
+                            <span>Body copy</span>
+                          </div>
+                          <div class="col-2 align-self-center">
+                            <b class="text-primary">Edit</b>
+                          </div>
+                        </div>
+                      </button>
+                    </h5>
+                  
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#registrationSteps">
+                    <div class="card-body">
+                      <div class="row border-top">
+                        <div class="col-8 p-0 pt-4">
+                        <div class="form-group">
+                          <label for="stAddress" class="sr-only">Street address</label>
+                          <input type="text" class="form-control form-control-lg" id="stAddress" placeholder="Street address" name="stAddress">
+                        </div>
+                        <div class="form-group">
+                          <label for="city" class="sr-only">City</label>
+                          <input type="text" class="form-control form-control-lg" id="city" placeholder="City" name="city">
+                        </div>
+                        <div class="form-group">
+                          <label for="state" class="sr-only">State</label>
+                          <select class="form-control form-control-lg" id="state">
+                            <option>State</option>                            
+                          </select>                          
+                        </div>
+                        <div class="form-group">
+                          <label for="zipcode" class="sr-only">Zipcode</label>
+                          <input type="text" class="form-control form-control-lg" id="zipcode" placeholder="Zipcode" name="zipcode">
+                        </div>
+                        <div class="form-group">
+                          <label for="pnumber" class="sr-only">Phone number</label>
+                          <input type="text" class="form-control form-control-lg" id="pnumber" placeholder="Phone number" name="pnumber">
+                        </div>
+                        <div class="custom-control custom-checkbox my-4">
+                          <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                          <label class="custom-control-label pl-1" for="customCheck">This is my primary address</label>
+                        </div>
+                        <div class="form-group">
+                          <label for="dob">Date of Birth</label>
+                          <div class="row m-0">
+                            <div class="col p-0">
+                              <select class="form-control form-control-lg" id="month">
+                                <option>Month</option>                            
+                              </select>
+                            </div>
+                            <div class="col p-0">
+                              <select class="form-control form-control-lg" id="day">
+                                <option>Day</option>                            
+                              </select>
+                            </div>
+                            <div class="col p-0">
+                              <select class="form-control form-control-lg" id="year">
+                                <option>Year</option>                            
+                              </select>
+                            </div>
+                          </div>
+                                                    
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-lg py-3 px-4 mt-4">Next</button>
+                        <button type="submit" class="btn btn-link btn-lg py-3 px-4 mt-4">Back</button>
+                      </div></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 3. Email Confirmation -->
+                <div class="card card-steps rounded-0 shadow-sm my-3">
+                  
+                    <h5 class="mb-0" id="headingThree">
+                      <button class="btn btn-block collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="row p-3">
+                          <div class="col-1 h1 font-weight-bold line-height-1">3</div>
+                          <div class="col-9 text-left">
+                            <p class="h2 font-weight-bold text-dark mb-1">Email Confirmation</p>
+                            <span>Body copy</span>
+                          </div>
+                          <div class="col-2 align-self-center">
+                            <b class="text-primary">Edit</b>
+                          </div>
+                        </div>                        
+                      </button>
+                    </h5>
+                  
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#registrationSteps">
+                    <div class="card-body">
+                      <div class="row border-top">
+                        <div class="col-8 p-0 pt-4">
+                        <div class="form-group">
+                          <label for="uname" class="sr-only">Username</label>
+                          <input type="text" class="form-control form-control-lg" id="uname" placeholder="Username" name="uname">
+                        </div>
+                        <div class="form-group">
+                          <label for="password1" class="sr-only">Password</label>
+                          <input type="password" class="form-control form-control-lg" id="password" placeholder="Password" name="password">
+                        </div>
+                        <div class="form-group">
+                          <label for="password2" class="sr-only">Confirm Password</label>
+                          <input type="password" class="form-control form-control-lg" id="password2" placeholder="Confirm Password" name="password2">
+                        </div>                        
+                        <div class="custom-control custom-checkbox my-4">
+                          <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                          <label class="custom-control-label pl-1" for="customCheck">Remember me <a href="#"><u>What's this?</u></a></label>
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-lg py-3 px-4 mt-4">Next</button>
+                        <button type="submit" class="btn btn-link btn-lg py-3 px-4 mt-4">Back</button>
+                      </div></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 4. Security Questions  -->
+                <div class="card card-steps rounded-0 shadow-sm my-3">
+                  
+                    <h5 class="mb-0" id="headingFour">
+                      <button class="btn btn-block collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <div class="row p-3">
+                          <div class="col-1 h1 font-weight-bold line-height-1">4</div>
+                          <div class="col-9 text-left">
+                            <p class="h2 font-weight-bold text-dark mb-1">Security Questions</p>
+                            <span>Body copy</span>
+                          </div>
+                          <div class="col-2 align-self-center">
+                            <b class="text-primary">Edit</b>
+                          </div>
+                        </div>                        
+                      </button>
+                    </h5>
+                  
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#registrationSteps">
+                    <div class="card-body">
+
+                      <div class="row border-top">
+                        <div class="col-8 p-0 pt-4">                        
+                        <div class="form-group">
+                          <label for="q1" class="sr-only">Question 1</label>
+                          <select class="form-control form-control-lg" id="q1">
+                            <option>Question 1</option>                            
+                          </select>                          
+                        </div>
+                        <div class="form-group">
+                          <label for="a1" class="sr-only">Answer</label>
+                          <input type="text" class="form-control form-control-lg" id="a1" placeholder="Answer" name="a1">
+                        </div>
+                        <div class="form-group">
+                          <label for="q2" class="sr-only">Question 2</label>
+                          <select class="form-control form-control-lg" id="q2">
+                            <option>Question 2</option>                            
+                          </select>                          
+                        </div>
+                        <div class="form-group">
+                          <label for="a2" class="sr-only">Answer</label>
+                          <input type="text" class="form-control form-control-lg" id="a2" placeholder="Answer" name="a2">
+                        </div>
+                        <div class="form-group">
+                          <label for="q3" class="sr-only">Question 3</label>
+                          <select class="form-control form-control-lg" id="q3">
+                            <option>Question 3</option>                            
+                          </select>                          
+                        </div>
+                        <div class="form-group">
+                          <label for="a3" class="sr-only">Answer</label>
+                          <input type="text" class="form-control form-control-lg" id="a3" placeholder="Answer" name="a3">
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-lg py-3 px-4 mt-4">Next</button>
+                        </div></div>                        
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="custom-control custom-checkbox py-4 mb-2">
+                  <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                  <label class="custom-control-label pl-1" for="customCheck"> By creating your account you agree to our <a href="#" class="text-primary"><u>Privacy Policy</u></a> <br>and <a href="" class="text-primary"><u>Terms & Conditions</u></a></label>
+                </div>
+
+                <button type="submit" class="btn btn-block btn-primary btn-lg py-3 px-4 mb-4">Continue</button>
+               
+              </div>
+            </div>
+
+            <!-- Add space goes here -->
+            <div class="col-md-5 mb-4">
+              <div class="px-4">
+                <img src="/img/img_placeholder.PNG" class="img-fluid" alt="Responsive image">
+                <p>Creating an account is fast, easy, and free.<br>
+                  You'll be able to manage your benefits, order products and more!</p>
+                  
+                <p>Your membership ID must match what is on your document. You can find it here</p>
+              </div>
+            </div>
+
+        </div>
+
+
+
+      </div>
+    </main>
+    
+    <footer class="footer mt-auto py-3 bg-secondary text-light lead">
+      <div class="container">         
+        <ul class="nav justify-content-center">
+          <li class="nav-item align-self-center">Our Experts are Here to Help</li>
+          <li class="nav-item px-4"><a href="#" class="nav-link text-light">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <strong class="pl-2">1-800-888-8888</strong></a>
+          </li>
+          <li class="nav-item px-4"><a href="#" class="nav-link text-light">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <strong class="pl-2">Email</strong></a>
+          </li>
+          <li class="nav-item px-4"><a href="#" class="nav-link text-light">
+            <i class="fa fa-comments-o" aria-hidden="true"></i>
+            <strong class="pl-2">Live Chat</strong></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+
+
+    <script>
+      // $(document).ready(function(){
+      //     $('#registrationSteps').collapse({
+      //       parent: true
+      //     })
+      // });
+    </script>
+
+  </body>
+
+
+
+</html>

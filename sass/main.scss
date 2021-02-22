@@ -1,0 +1,38 @@
+$theme-colors: (
+  "primary": #00a1af,
+  "secondary": #35647e,
+  "dark": #53565a,
+  "success": #6ea35a,
+  "danger": #e04217,
+);
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.line-height-1 {
+  line-height: 1;
+}
+.card.card-steps {
+  h5 .btn:not(.collapsed) {
+    background-color: #f8f9fa;
+    border-radius: 0;
+    b.text-primary {
+      display: none;
+    }
+  }
+  .card-body {
+    background-color: #f8f9fa;
+    padding: 0.5rem 3rem 2rem 3rem;
+  }
+}
+.custom-control-label::before,
+.custom-control-label::after {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.logo-secure {
+  border-left: 1px solid #ccc;
+  padding-left: 10px;
+  margin-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
