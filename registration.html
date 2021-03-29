@@ -4,12 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Custom CSS over Bootstrap 4.6 -->
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
 
     <title>Registration</title>
   </head>
@@ -17,391 +16,442 @@
 
   <body class="d-flex flex-column h-100">
     
-    
-    <header>     
+     <!-- before signin:  Header part goes here -->
+     <header>     
       <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white shadow-sm">
-          <div class="container">          
-                <!-- Brand Logo goes here -->
-                <a class="navbar-brand d-inline-flex" href="#">
-                  <img src="/img/Convey-logo.png" alt="convey-logo" width="150">
-                  <div class="logo-secure align-self-center text-dark">
-                    <i class="fa fa-lock" aria-hidden="true"></i>
-                    Secure
-                  </div>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- collapseble content goes here -->
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                  <div class="ml-auto">
-                      <div class="col-md-12 d-inline-flex">
-                        <span class="align-self-center">language preference:</span>
-                        <div class="dropdown">
-                          <button class="btn btn-link text-dark font-weight-bold text-decoration-none dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            English
-                          </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                          </div>
-                        </div>
-                        <span class="align-self-center pl-3">enlarge text:</span>
-                        <a href="#" class="align-self-center h4 pl-1 text-dark">
-                        <i class="fa fa-minus-circle" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" class="align-self-center h4 pl-1 text-dark">
-                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                      </a>
-                      </div>
-                
-                      <div class="col-md-12 my-3">
-                    <ul class="navbar-nav pl-4">
-                      <li class="nav-item d-inline-flex">
-                        <span class="align-self-center">Questions?</span>
-                        <div class="dropdown">
-                          <button class="btn btn-link font-weight-bold text-decoration-none dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            24/7 Help
-                          </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="nav-item ">              
-                        <div class="logo-secure align-self-center h5">
-                          Shop as a guest
-                        </div>        
-                      </li>   
-                    </ul>
-                  </div>
-                  </div>      
+      <nav class="navbar navbar-expand-md fixed-top navbar-light bg-white shadow-sm p-0 text-info">
+          <div class="container d-flex flex-row flex-wrap">   
+ 
+               
+                <!-- Logo Brand -->
+                <div class="d-flex flex-row col-12 order-3 col-sm-12 order-sm-3 col-md-12 order-md-3 col-lg-6 order-lg-1">
+                  <a class="navbar-brand d-inline-flex p-0 mx-auto ml-lg-0" href="#">
+                    <img src="./img/Convey-logo.svg" alt="convey-logo" height="60">
+                    <div class="logo-secure align-self-center text-info py-2">
+                      <i class="fa fa-lock" aria-hidden="true"></i>
+                      Secure
+                    </div>
+                  </a>
                 </div>
+
+                
+                <!-- Toggle Navigation Menu Icon -->
+                <button class="navbar-toggler mr-2 text-secondary border-0 col-auto order-1 col-sm-auto order-sm-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-bars icon-size" aria-hidden="true"></i>
+                </button>
+
+                <!-- collapseble content goes here -->
+                <div class="d-flex flex-row col-12 order-4 col-sm-12 order-sm-4 col-md-auto order-md-1 col-lg-auto order-lg-2 justify-content-lg-end">
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                            <ul class="navbar-nav navbarNav">
+                              <li class="nav-item d-inline-flex">
+                                <span class="align-self-center mr-2">Questions?</span>
+                                <a href="#" class="font-weight-bold">Get Help</a>
+                              </li>                           
+                            </ul>
+     
+                    </div>
+                </div>
+
+                <!-- Language & Enlarge goes here -->
+                <div class="d-flex flex-row col-auto order-2 col-sm-auto order-sm-2 col-md-auto order-md-2 col-lg-3 order-lg-3">               
+                    <div class="d-flex flex-row align-items-center justify-content-end">                     
+                      <div class="dropdown my-2">
+                        <button class="btn btn-outline-info text-decoration-none dropdown-toggle dropdown-icon-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <small class="d-block text-left">Language</small><span class="d-block text-left">English</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">EN</a>
+                          <a class="dropdown-item" href="#">ES</a>
+                        </div>
+                      </div>
+                      <p class="pl-3 m-0">Enlarge:</p>
+                      <a href="#" class="d-flex text-secondary border border-secondary rounded-circle ml-1 size-35 text-decoration-none">
+                        <i class="fa fa-minus align-self-center mx-auto" aria-hidden="true"></i>
+                      </a>
+                      <a href="#" class="d-flex text-secondary border border-secondary rounded-circle ml-1 size-35 text-decoration-none">
+                        <i class="fa fa-plus align-self-center mx-auto" aria-hidden="true"></i>
+                      </a>
+                    </div>                
+                </div>
+
           </div>
         </nav>    
     </header>
     
     <!-- Begin page content -->
-    <main role="main" class="flex-shrink-0 pt-5 mt-5">
-      <div class="container pt-4">
-        <h1 class="text-dark font-weight-bold display-4 my-4 pt-4">Register</h1>
-        <h2 class="font-weight-bold">Welcome! Lets get started.</h2>
-        <p>Please complete the 4 steps below to get set up.</p>
+    <main role="main" class="main-signin--before">
 
-        <div class="row">
-            <div class="col-md-7 mb-4">
-              <!-- Registrations Steps goes here -->
-              <div id="registrationSteps">
+      <div class="container">
+        <div class="col-10 mx-auto mt-5 mt-lg-0">
+            <div class="py-4 my-3 text-info">
+              <h1 class="display-4 line-height-1"><b>Register</b></h1>
+              <p class="h4 mt-3 mb-4 pt-3">Welcome! Let's get started.</p>
+              <p>Please complete the 4 steps below to create your account.</p>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                  <!-- Registrations Steps goes here -->
+                  <div id="registrationSteps">
 
-                <!-- 1. Policy Information  -->
-                <div class="card card-steps rounded-0 shadow-sm my-3">
-                  
-                    <h5 class="mb-0" id="headingOne">
-                      <button class="btn btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <div class="row p-3">
-                          <div class="col-1 h1 font-weight-bold line-height-1">1</div>
-                          <div class="col-9 text-left">
-                            <p class="h2 font-weight-bold text-dark mb-1">Policy Information</p>
-                            <span>Body copy</span>
-                          </div>
-                          <div class="col-2 align-self-center">
-                            <b class="text-primary">Edit</b>
-                          </div>
-                        </div>                        
-                      </button>
-                    </h5>                  
-              
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#registrationSteps">
-                    <div class="card-body">
-                      <div class="row border-top">
-                      <div class="col-8 p-0 pt-4">
-                      <div class="form-group">
-                        <label for="fname" class="sr-only">First name</label>
-                        <input type="text" class="form-control form-control-lg" id="fname" placeholder="First name" name="fname">
-                      </div>
-                      <div class="form-group">
-                        <label for="lname" class="sr-only">Last name</label>
-                        <input type="text" class="form-control form-control-lg" id="lname" placeholder="Last name" name="lname">
-                      </div>
-                      <div class="form-group">
-                        <label for="mID" class="sr-only">Member ID</label>
-                        <input type="text" class="form-control form-control-lg" id="mID" placeholder="Member ID" name="mID">
-                        <p class="pt-1"><i class="fa fa-info-circle" aria-hidden="true"></i> Where can I find this?</p>
-                      </div>
+                    <!-- 1. Policy Information  -->
+                    <div class="card card-steps rounded-2 shadow-md-2 mb-4 border-0 bg-light">
                       
-
-                      <button type="submit" class="btn btn-dark btn-lg py-3 px-4 mt-4">Submit</button>
-                    </div></div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- 2. Street address -->
-                <div class="card card-steps rounded-0 shadow-sm my-3">
+                        <h5 class="mb-0" id="headingOne">
+                          <button class="btn btn-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="d-flex flex-column pt-3 pl-3 pr-3 pb-0 text-left">
+                              <div class="text-secondary editText">Edit</div>
+                              <div class="h5 font-weight-bold line-height-1 text-primary pt-3">Step 1</div>
+                              <div class="h2 text-info font-weight-normal pt-2">Policy Information</div>
+                            </div>                        
+                          </button>
+                        </h5>                  
                   
-                    <h5 class="mb-0" id="headingTwo">
-                      <button class="btn btn-block collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <div class="row p-3">
-                          <div class="col-1 h1 font-weight-bold line-height-1">2</div>
-                          <div class="col-9 text-left">
-                            <p class="h2 font-weight-bold text-dark mb-1">Personal Information</p>
-                            <span>Body copy</span>
-                          </div>
-                          <div class="col-2 align-self-center">
-                            <b class="text-primary">Edit</b>
-                          </div>
-                        </div>
-                      </button>
-                    </h5>
-                  
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#registrationSteps">
-                    <div class="card-body">
-                      <div class="row border-top">
-                        <div class="col-8 p-0 pt-4">
-                        <div class="form-group">
-                          <label for="stAddress" class="sr-only">Street address</label>
-                          <input type="text" class="form-control form-control-lg" id="stAddress" placeholder="Street address" name="stAddress">
-                        </div>
-                        <div class="form-group">
-                          <label for="city" class="sr-only">City</label>
-                          <input type="text" class="form-control form-control-lg" id="city" placeholder="City" name="city">
-                        </div>
-                        <div class="form-group">
-                          <label for="state" class="sr-only">State</label>
-                          <select class="form-control form-control-lg" id="state">
-                            <option>State</option>                            
-                          </select>                          
-                        </div>
-                        <div class="form-group">
-                          <label for="zipcode" class="sr-only">Zipcode</label>
-                          <input type="text" class="form-control form-control-lg" id="zipcode" placeholder="Zipcode" name="zipcode">
-                        </div>
-                        <div class="form-group">
-                          <label for="pnumber" class="sr-only">Phone number</label>
-                          <input type="text" class="form-control form-control-lg" id="pnumber" placeholder="Phone number" name="pnumber">
-                        </div>
-                        <div class="custom-control custom-checkbox my-4">
-                          <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
-                          <label class="custom-control-label pl-1" for="customCheck">This is my primary address</label>
-                        </div>
-                        <div class="form-group">
-                          <label for="dob">Date of Birth</label>
-                          <div class="row m-0">
-                            <div class="col p-0">
-                              <select class="form-control form-control-lg" id="month">
-                                <option>Month</option>                            
-                              </select>
-                            </div>
-                            <div class="col p-0">
-                              <select class="form-control form-control-lg" id="day">
-                                <option>Day</option>                            
-                              </select>
-                            </div>
-                            <div class="col p-0">
-                              <select class="form-control form-control-lg" id="year">
-                                <option>Year</option>                            
-                              </select>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#registrationSteps">
+                        <div class="card-body pt-0 pl-4 pr-4 pb-4 mx-1">
+                          <p class="mb-5">Body Copy</p>
+                          <div class="row">
+                          <div class="col-12 pb-2">
+                            
+                          <div class="form-group">
+                            <label for="fname" class="mb-1">First name</label>
+                            <input type="text" class="form-control is-invalid" id="fname" name="fname" aria-describedby="fname" required>
+                            <div class="invalid-feedback">
+                              Error message
                             </div>
                           </div>
-                                                    
+
+                          <!-- Below is the error show steps, 
+                            1) add classname of 'is-valid'
+                            2) 'invalid-feedback' div need to add for error message 
+                          -->
+
+                          <div class="form-group">
+                            <label for="lname" class="mb-1">Last name</label>
+                            <input type="text" class="form-control" id="lname" name="lname">
+                          </div>
+                          <div class="form-group">
+                            <label for="mID" class="mb-1">Member ID card number</label>
+                            <input type="text" class="form-control" id="mID"  name="mID">
+                            <p class="pt-1">
+                              <a tabindex="0" class="text-decoration-none" id="memID" data-toggle="popover">
+                                <i class="fa fa-info-circle pt-1 text-secondary" aria-hidden="true"></i>
+                              </a>                              
+                              <small class="pl-1">Where can I find this?</small></p>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="eadd" class="mb-1">Email Address</label>
+                            <input type="text" class="form-control" id="eadd" name="eadd">
+                          </div>
+
+                          <div class="custom-control custom-checkbox py-4 mb-2">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2" name="example1">
+                            <label class="custom-control-label pl-4" for="customCheck2">By providing your email address to 
+                              us, you explessly consent that we 
+                              may send communications to you 
+                              via email. If you do not wish to 
+                              provide an email address, you can 
+                              place your OTC order by calling the 
+                              OTC Order Fullfillment Center.
+                            </label>
+                          </div>
+                          
+
+                          <button type="button" class="btn btn-primary btn-lg py-3 px-6 font-weight-bold">Next</button>
+                        </div></div>
                         </div>
-                        <button type="submit" class="btn btn-dark btn-lg py-3 px-4 mt-4">Next</button>
-                        <button type="submit" class="btn btn-link btn-lg py-3 px-4 mt-4">Back</button>
-                      </div></div>
+                      </div>
                     </div>
+
+                    <!-- 2. Street address -->
+                    <div class="card card-steps rounded-2 shadow-md-2 mb-4 border-0 bg-light">
+                      
+                        <h5 class="mb-0" id="headingTwo">
+                          <button class="btn btn-block collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="d-flex flex-column pt-3 pl-3 pr-3 pb-0 text-left">
+                              <div class="text-secondary editText">Edit</div>
+                              <div class="h5 font-weight-bold line-height-1 text-primary pt-3">Step 2</div>
+                              <div class="h2 text-info font-weight-normal pt-2">Personal Information</div>                                                 
+                            </div>
+                          </button>
+                        </h5>
+                      
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#registrationSteps">
+                        <div class="card-body pt-0 pl-4 pr-4 pb-4 mx-1">
+                          <p class="mb-5">Body Copy</p>
+                          <div class="row">
+                            <div class="col-12 pb-2">
+                            <div class="form-group">
+                              <label for="stAddress" class="mb-1">Street address</label>
+                              <input type="text" class="form-control form-control-lg" id="stAddress" name="stAddress">
+                            </div>
+                            <div class="form-group">
+                              <label for="city" class="mb-1">City</label>
+                              <input type="text" class="form-control form-control-lg" id="city" name="city">
+                            </div>
+                            <div class="form-group">
+                              <label for="state" class="mb-1">State</label>
+                              <select class="form-control form-control-lg" id="state">
+                                <option></option>                            
+                              </select>                          
+                            </div>
+                            <div class="form-group">
+                              <label for="zipcode" class="mb-1">Zipcode</label>
+                              <input type="text" class="form-control form-control-lg" id="zipcode" name="zipcode">
+                            </div>
+                            <div class="form-group">
+                              <label for="pnumber" class="mb-1">Phone number</label>
+                              <input type="text" class="form-control form-control-lg" id="pnumber" name="pnumber">
+                            </div>
+                            <div class="custom-control custom-checkbox py-4 mb-2">
+                              <input type="checkbox" class="custom-control-input" id="customCheck3" name="example1">
+                              <label class="custom-control-label pl-4" for="customCheck3">This is my primary address
+                              </label>
+                            </div>
+                            <div class="form-group mb-5">
+                              <label for="dob" class="mb-1">Date of Birth</label>
+                              <div class="row m-0">
+                                <div class="col p-0">
+                                  <select class="form-control form-control-lg" id="month">
+                                    <option>Month</option>                            
+                                  </select>
+                                </div>
+                                <div class="col p-0">
+                                  <select class="form-control form-control-lg" id="day">
+                                    <option>Day</option>                            
+                                  </select>
+                                </div>
+                                <div class="col p-0">
+                                  <select class="form-control form-control-lg" id="year">
+                                    <option>Year</option>                            
+                                  </select>
+                                </div>
+                              </div>
+                                                        
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg py-3 px-6 font-weight-bold">Next</button>
+                            <button type="button" class="btn btn-link btn-lg py-3 px-6 font-weight-bold text-decoration-none">Back</button>
+                          </div></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 3. Account Setup -->
+                    <div class="card card-steps rounded-2 shadow-md-2 mb-4 border-0 bg-light">
+                      
+                        <h5 class="mb-0" id="headingThree">
+                          <button class="btn btn-block collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="d-flex flex-column pt-3 pl-3 pr-3 pb-0 text-left">
+                              <div class="text-secondary editText">Edit</div>
+                              <div class="h5 font-weight-bold line-height-1 text-primary pt-3">Step 3</div>
+                              <div class="h2 text-info font-weight-normal pt-2">Account Setup</div>                          
+                            </div>                        
+                          </button>
+                        </h5>
+                      
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#registrationSteps">
+                        <div class="card-body pt-0 pl-4 pr-4 pb-4 mx-1">
+                          <p class="mb-5">Body Copy</p>
+                          <div class="row">
+                            <div class="col-12 pb-2">
+                            <div class="form-group">
+                              <label for="uname" class="mb-1">Username</label>
+                              <input type="text" class="form-control form-control-lg" id="uname" name="uname">
+                            </div>
+                            <div class="form-group">
+                              <label for="password1" class="mb-1">Password</label>
+                              <input type="password" class="form-control form-control-lg" id="password" name="password">
+                            </div>
+                            <div class="form-group">
+                              <label for="password2" class="mb-1">Confirm Password</label>
+                              <input type="password" class="form-control form-control-lg" id="password2" name="password2">
+                            </div>                        
+                            <div class="custom-control custom-checkbox py-4 mb-5">
+                              <input type="checkbox" class="custom-control-input" id="customCheck4" name="example1">                              
+                              <label class="custom-control-label pl-4" for="customCheck4">Remember me <a href="#"><u>What's this?</u></a></label>
+                              </label>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg py-3 px-6 font-weight-bold">Next</button>
+                            <button type="button" class="btn btn-link btn-lg py-3 px-6 font-weight-bold text-decoration-none">Back</button>
+                          </div></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 4. Security Questions  -->
+                    <div class="card card-steps rounded-2 shadow-md-2 mb-4 border-0 bg-light">
+                      
+                        <h5 class="mb-0" id="headingFour">
+                          <button class="btn btn-block collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <div class="d-flex flex-column pt-3 pl-3 pr-3 pb-0 text-left">
+                              <div class="text-secondary editText">Edit</div>
+                              <div class="h5 font-weight-bold line-height-1 text-primary pt-3">Step 4</div>
+                              <div class="h2 text-info font-weight-normal pt-2">Security Questions</div>
+                            </div>                        
+                          </button>
+                        </h5>
+                      
+                      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#registrationSteps">
+                        <div class="card-body pt-0 pl-4 pr-4 pb-4 mx-1">
+                          <p class="mb-5">Body Copy</p>
+                          <div class="row">
+                            <div class="col-12 pb-2">                        
+                            <div class="form-group">
+                              <label for="q1" class="mb-1">Question 1</label>
+                              <select class="form-control form-control-lg" id="q1">
+                                <option></option>                            
+                              </select>                          
+                            </div>
+                            <div class="form-group">
+                              <label for="a1" class="mb-1">Answer</label>
+                              <input type="text" class="form-control form-control-lg" id="a1" name="a1">
+                            </div>
+                            <div class="form-group">
+                              <label for="q2" class="mb-1">Question 2</label>
+                              <select class="form-control form-control-lg" id="q2">
+                                <option></option>                            
+                              </select>                          
+                            </div>
+                            <div class="form-group">
+                              <label for="a2" class="mb-1">Answer</label>
+                              <input type="text" class="form-control form-control-lg" id="a2" name="a2">
+                            </div>
+                            <div class="form-group">
+                              <label for="q3" class="mb-1">Question 3</label>
+                              <select class="form-control form-control-lg" id="q3">
+                                <option></option>                            
+                              </select>                          
+                            </div>
+                            <div class="form-group mb-5">
+                              <label for="a3" class="mb-1">Answer</label>
+                              <input type="text" class="form-control form-control-lg" id="a3" name="a3">
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg py-3 px-6 font-weight-bold">Next</button>
+                            </div></div>                        
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="custom-control custom-checkbox py-4 mb-2">
+                      <input type="checkbox" class="custom-control-input" id="customCheck2" name="example1">
+                      <label class="custom-control-label pl-4" for="customCheck2">By creating your account you agree to <br>our 
+                        <a href="#" class="text-primary"><u>Privacy Policy</u></a> and 
+                        <a href="#" class="text-primary"><u>Terms & Conditions</u></a>
+                      </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block btn-lg rounded-1 py-3 px-4 my-2"><b>Submit</b></button>
+                  
                   </div>
                 </div>
 
-                <!-- 3. Email Confirmation -->
-                <div class="card card-steps rounded-0 shadow-sm my-3">
-                  
-                    <h5 class="mb-0" id="headingThree">
-                      <button class="btn btn-block collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <div class="row p-3">
-                          <div class="col-1 h1 font-weight-bold line-height-1">3</div>
-                          <div class="col-9 text-left">
-                            <p class="h2 font-weight-bold text-dark mb-1">Email Confirmation</p>
-                            <span>Body copy</span>
-                          </div>
-                          <div class="col-2 align-self-center">
-                            <b class="text-primary">Edit</b>
-                          </div>
-                        </div>                        
-                      </button>
-                    </h5>
-                  
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#registrationSteps">
-                    <div class="card-body">
-                      <div class="row border-top">
-                        <div class="col-8 p-0 pt-4">
-                        <div class="form-group">
-                          <label for="uname" class="sr-only">Username</label>
-                          <input type="text" class="form-control form-control-lg" id="uname" placeholder="Username" name="uname">
-                        </div>
-                        <div class="form-group">
-                          <label for="password1" class="sr-only">Password</label>
-                          <input type="password" class="form-control form-control-lg" id="password" placeholder="Password" name="password">
-                        </div>
-                        <div class="form-group">
-                          <label for="password2" class="sr-only">Confirm Password</label>
-                          <input type="password" class="form-control form-control-lg" id="password2" placeholder="Confirm Password" name="password2">
-                        </div>                        
-                        <div class="custom-control custom-checkbox my-4">
-                          <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
-                          <label class="custom-control-label pl-1" for="customCheck">Remember me <a href="#"><u>What's this?</u></a></label>
-                        </div>
-                        <button type="submit" class="btn btn-dark btn-lg py-3 px-4 mt-4">Next</button>
-                        <button type="submit" class="btn btn-link btn-lg py-3 px-4 mt-4">Back</button>
-                      </div></div>
+                <!-- Add space goes here -->
+                <div class="col-12 col-lg-7 mt-4 mt-lg-0">
+                  <div class="px-4">
+                    <div class="bg-light rounded-2">
+                      <a href="#" class="">                      
+                        <!-- <img src="./img/img_placeholder.PNG" alt="ad space" class="img-fluid" /> -->
+                        <!-- If above image is not available, we will show below icon -->
+                        <i class="fa fa-picture-o text-info d-flex flex-row p-5 h1 justify-content-center" aria-hidden="true"></i>
+                      </a>
                     </div>
+                    <p class="border-top pt-4 mt-5">Lorem ipsum dolor sit amet, consectetur 
+                      adipiscing elit, sed do eiusmod tempor incididunt 
+                      ut labore et dolore magna aliqua. </p>
                   </div>
                 </div>
 
-                <!-- 4. Security Questions  -->
-                <div class="card card-steps rounded-0 shadow-sm my-3">
-                  
-                    <h5 class="mb-0" id="headingFour">
-                      <button class="btn btn-block collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <div class="row p-3">
-                          <div class="col-1 h1 font-weight-bold line-height-1">4</div>
-                          <div class="col-9 text-left">
-                            <p class="h2 font-weight-bold text-dark mb-1">Security Questions</p>
-                            <span>Body copy</span>
-                          </div>
-                          <div class="col-2 align-self-center">
-                            <b class="text-primary">Edit</b>
-                          </div>
-                        </div>                        
-                      </button>
-                    </h5>
-                  
-                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#registrationSteps">
-                    <div class="card-body">
-
-                      <div class="row border-top">
-                        <div class="col-8 p-0 pt-4">                        
-                        <div class="form-group">
-                          <label for="q1" class="sr-only">Question 1</label>
-                          <select class="form-control form-control-lg" id="q1">
-                            <option>Question 1</option>                            
-                          </select>                          
-                        </div>
-                        <div class="form-group">
-                          <label for="a1" class="sr-only">Answer</label>
-                          <input type="text" class="form-control form-control-lg" id="a1" placeholder="Answer" name="a1">
-                        </div>
-                        <div class="form-group">
-                          <label for="q2" class="sr-only">Question 2</label>
-                          <select class="form-control form-control-lg" id="q2">
-                            <option>Question 2</option>                            
-                          </select>                          
-                        </div>
-                        <div class="form-group">
-                          <label for="a2" class="sr-only">Answer</label>
-                          <input type="text" class="form-control form-control-lg" id="a2" placeholder="Answer" name="a2">
-                        </div>
-                        <div class="form-group">
-                          <label for="q3" class="sr-only">Question 3</label>
-                          <select class="form-control form-control-lg" id="q3">
-                            <option>Question 3</option>                            
-                          </select>                          
-                        </div>
-                        <div class="form-group">
-                          <label for="a3" class="sr-only">Answer</label>
-                          <input type="text" class="form-control form-control-lg" id="a3" placeholder="Answer" name="a3">
-                        </div>
-                        <button type="submit" class="btn btn-dark btn-lg py-3 px-4 mt-4">Next</button>
-                        </div></div>                        
-
-                    </div>
-                  </div>
-                </div>
-
-                <div class="custom-control custom-checkbox py-4 mb-2">
-                  <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
-                  <label class="custom-control-label pl-1" for="customCheck"> By creating your account you agree to our <a href="#" class="text-primary"><u>Privacy Policy</u></a> <br>and <a href="" class="text-primary"><u>Terms & Conditions</u></a></label>
-                </div>
-
-                <button type="submit" class="btn btn-block btn-primary btn-lg py-3 px-4 mb-4">Continue</button>
-               
-              </div>
             </div>
-
-            <!-- Add space goes here -->
-            <div class="col-md-5 mb-4">
-              <div class="px-4">
-                <img src="/img/img_placeholder.PNG" class="img-fluid" alt="Responsive image">
-                <p>Creating an account is fast, easy, and free.<br>
-                  You'll be able to manage your benefits, order products and more!</p>
-                  
-                <p>Your membership ID must match what is on your document. You can find it here</p>
-              </div>
-            </div>
-
         </div>
-
-
-
       </div>
+
     </main>
     
-    <footer class="footer mt-auto py-3 bg-secondary text-light lead">
-      <div class="container">         
-        <ul class="nav justify-content-center">
-          <li class="nav-item align-self-center">Our Experts are Here to Help</li>
-          <li class="nav-item px-4"><a href="#" class="nav-link text-light">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <strong class="pl-2">1-800-888-8888</strong></a>
-          </li>
-          <li class="nav-item px-4"><a href="#" class="nav-link text-light">
-            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-            <strong class="pl-2">Email</strong></a>
-          </li>
-          <li class="nav-item px-4"><a href="#" class="nav-link text-light">
-            <i class="fa fa-comments-o" aria-hidden="true"></i>
-            <strong class="pl-2">Live Chat</strong></a>
-          </li>
-        </ul>
+    <!-- Footer part goes here -->
+    <footer class="footer mt-auto">
+
+      <!-- Need Help -->
+      <div class="bg-primary text-center text-light py-2">
+        <p class="my-1 h5 font-weight-normal">Need Help? <b>1-800-000-0000</b></p>
+      </div>  
+
+      <!-- App Download links -->
+      <div class="appDownloads text-center py-3">
+        <p class="text-secondary h4">Download our Mobile App</p>
+        <div class="app-download-links d-flex flex-row justify-content-center">
+          <a href="#" class="dlinks apple">Download on the App Store</a>
+          <a href="#" class="dlinks gplay">Get it on Google Play</a>
+        </div>
       </div>
-    </footer>
 
+      <!-- Adspace -->
+      <div class="addspace text-center">
+        <img src="./img/Adspace.svg" class="img-fluid h-100" alt="adspace" />          
+      </div>
 
+      <!-- Footer links : Copyright  |  Terms & Conditions  |  Privacy Policy -->
+      <ul class="nav justify-content-center py-3">
+        <li class="nav-item px-4">
+          <a href=""><u>Copyright &copy; 2021 Convey</u></a>
+        </li>
+        <li class="nav-item px-4">
+          <a href=""><u>Terms & Conditions</u></a>
+        </li>
+        <li class="nav-item px-4">
+          <a href=""><u>Privacy Policy</u></a>
+        </li>
+      </ul>
 
+  </footer>
 
-
-
-
-
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    -->
-
-
     <script>
-      // $(document).ready(function(){
-      //     $('#registrationSteps').collapse({
-      //       parent: true
-      //     })
-      // });
+      $(document).ready(function(){
+        
+        // Popover content
+        $.fn.tooltip.Constructor.Default.whiteList['*'].push('style'); // includes style attribute in popovers
+        $('#memID').popover({          
+            html: true,
+            container:'body',
+            trigger: 'click focus',
+            placement:'bottom',
+            content:`<div class="p-3 mt-2 text-info" role="tooltip">
+                        <h5 class="font-weight-bold text-secondary mt-2 mb-3">Title</h5>                
+                        <p class="h5 font-weight-normal mb-4 pb-2">Lorem ipsum dolor sit amet, 
+                          consectetur adipiscing elit, sed do 
+                          eiusmod tempor incididunt ut labore 
+                          et dolore magna aliqua.</p> 
+                          <div class="bg-light rounded-2">
+                            <a href="#" class="">                      
+                              <!-- <img src="./img/img_placeholder.PNG" alt="ad space" class="img-fluid" /> -->
+                              <!-- If above image is not available, we will show below icon -->
+                              <i class="fa fa-picture-o text-info d-flex flex-row p-5 h1 justify-content-center" aria-hidden="true"></i>
+                            </a>
+                          </div>
+                    </div>`
+        });
+
+        // Popover close on Esc keypress
+        $(document).keyup(function (event) {
+            if (event.which === 27) {
+                $('[data-toggle="popover"]').popover('hide');
+            }
+        });
+
+        
+      });
+      // Popover close on click outside
+      $('.popover-dismiss').popover({
+          trigger:'focus'
+        });
     </script>
 
   </body>
-
-
-
 </html>

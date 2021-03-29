@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS over Bootstrap 4.6 -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Product Filter</title>
+  </head>
+
+
+  <body class="d-flex flex-column h-100">
+    
+   <!-- Header: After login -->
+   <header>     
+    <!-- Fixed navbar -->      
+      <nav class="navbar fixed-top bg-white shadow-sm py-0  navbar-expand-xl navbar-light">
+        <div class="container">   
+            <div class="row d-flex flex-row justify-content-center flex-wrap">
+                
+                <!-- Logo Brand -->
+                <div class="col-12 order-2 col-md-6 order-md-3 col-lg-6 order-lg-1 d-flex flex-row">
+                  <a class="navbar-brand d-inline-flex p-0 mx-auto ml-lg-0" href="#">
+                    <img src="./img/Convey-logo.svg" alt="convey-logo" class="logo">
+                    <div class="logo-secure align-self-center text-dark d-block d-lg-none">
+                      <i class="fa fa-lock" aria-hidden="true"></i>
+                      Secure
+                    </div>
+                  </a>
+                </div>
+                
+                <!-- Language & Enlarge -->
+                <div class="col-12 order-1 col-md-12 order-md-1 col-lg-6 order-lg-2 d-flex flex-row align-items-center justify-content-end">                     
+                    <div class="dropdown my-2">
+                      <button class="btn btn-outline-dark text-decoration-none dropdown-toggle dropdown-icon-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <small class="d-block text-left">Language</small><span class="d-block text-left">English</span>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">EN</a>
+                        <a class="dropdown-item" href="#">ES</a>
+                      </div>
+                    </div>
+                    <p class="pl-3 m-0">Enlarge:</p>
+                    <a href="#" class="d-flex text-secondary border border-secondary rounded-circle ml-1 size-35 text-decoration-none">
+                      <i class="fa fa-minus align-self-center mx-auto" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="d-flex text-secondary border border-secondary rounded-circle ml-1 size-35 text-decoration-none">
+                      <i class="fa fa-plus align-self-center mx-auto" aria-hidden="true"></i>
+                    </a>
+                    
+                </div>                  
+                
+                <!-- Search -->
+                <div class="col-6 order-3 col-md-3 order-md-2 col-lg-6 order-lg-3 py-1 d-flex flex-row">                      
+                  <!-- Toggle Navigation Menu Icon -->
+                  <button class="navbar-toggler mr-2 text-secondary border-0 pl-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars icon-size" aria-hidden="true"></i>
+                  </button>
+
+                  <div class="input-group has-search d-flex flex-row align-items-center">
+                    <button class="btn btn-link d-block d-lg-none text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      <span class="fa fa-search text-secondary icon-size d-block d-lg-none" ></span>
+                    </button>                      
+                   
+                    <span class="fa fa-search form-control-feedback text-secondary d-none d-lg-block"></span>
+                    <input type="text" class="form-control bg-light rounded-left d-none d-lg-block" placeholder="Search by product or item number">
+                    <div class="input-group-append d-none d-xl-block">
+                      <button class="btn btn-primary px-4 font-weight-bold" type="button">
+                        Search
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Menu : Help | My Account | Shopping Cart -->
+                <div class="col-6 order-4 col-md-3 order-md-4 col-lg-6 order-lg-4 d-flex justify-content-end">
+                  <ul class="navbarNav d-flex flex-row align-items-center">
+                    <li class="nav-item d-none d-lg-block">
+                      <div class="dropdown">
+                        <button class="btn btn-link text-secondary font-weight-bold text-decoration-none dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Help
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item myAccount">
+                      <div class="dropdown">
+                        <button class="btn btn-link text-secondary font-weight-bold text-decoration-none dropdown-toggle d-flex flex-row" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i class="fa fa-user icon-size d-md-block d-lg-none" aria-hidden="true"></i>
+                          <span class="d-none d-lg-block">My Account</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item pr-0">
+                      <a class="nav-link text-secondary font-weight-bold pr-0 pl-0 d-flex flex-row align-items-center" href="#">
+                        <i class="fa fa-shopping-cart icon-size m-0" aria-hidden="true"></i>
+                        <span class="pl-2 d-none d-xl-block">Shopping Cart</span>
+                      </a>
+                    </li>
+                  </ul>
+
+                </div>
+
+                <!-- Menu : Shop | Orders | Health & Wellness | Benefits -->
+                <div class="col-12 order-5 col-md-12 order-md-5 col-lg-12 order-lg-5  py-md-0 py-lg-2">     
+                  <div class="collapse pb-2" id="collapseExample">
+                    <input type="text" class="form-control bg-light rounded-left" placeholder="Find what your looking for">
+                  </div>             
+                  <div class="collapse navbar-collapse" id="navbarCollapse">                   
+                      <ul class="navbarNav d-flex flex-column flex-md-row">
+                        <li class="nav-item pl-0">
+                          <div class="dropdown">
+                            <button class="btn btn-link text-secondary font-weight-bold text-decoration-none dropdown-toggle pl-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Shop
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item d-inline-flex">
+                          <div class="dropdown">
+                            <button class="btn btn-link text-secondary font-weight-bold text-decoration-none dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Orders
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-secondary font-weight-bold" href="#">Health & Wellness</a>
+                        </li> 
+                        <li class="nav-item">
+                          <a class="nav-link text-secondary font-weight-bold" href="#">Benefits</a>
+                        </li>   
+                      </ul>                        
+                  </div>                  
+                </div>
+
+            </div>
+        </div>
+
+
+      </nav>
+    </header>
+    
+    <!-- Begin page content -->
+    <main role="main" class="main-signin--after">
+
+
+      <div class="container py-2">
+
+        <!-- Breadcrumbs -->
+        <div class="row">
+            <div class="col">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-white px-0">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">breadcrumbs</li>
+                    </ol>
+                  </nav>
+            </div>
+        </div>
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col">
+                <h1 class="h5 text-info font-weight-bold mb-3">Filter by:</h1>
+            </div>
+        </div>
+
+        <div class="row filterBy">
+            <div class="col-12 col-md-3">
+
+                        <!-- 1. Price  -->
+                        <div class="card rounded-1 border-0 pr-3">                       
+                                <a class="btn btn-block px-0 py-4 text-left d-flex flex-row justify-content-between" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">                                                                                          
+                                    <span class="h5 font-weight-bold text-secondary">Price</span>
+                                    <i class="fa fa-chevron-up d-felx align-self-center text-secondary h5 m-0" aria-hidden="true"></i>
+                                </a>
+                                
+                                <div id="collapseOne" class="collapse multi-collapse show" aria-labelledby="headingOne" >
+                                    <div class="card-body text-info px-0 pt-0">
+                                    <div class="row">
+                                        <div class="col-12">
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1" name="example1">
+                                                <label class="custom-control-label pl-4 text-secondary pt-1" for="customCheck1">Under $5</label>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox my-4">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2" name="example2">
+                                                <label class="custom-control-label pl-4 text-secondary pt-1" for="customCheck2">$5-$10</label>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox my-4">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck3" name="example3" checked>
+                                                <label class="custom-control-label pl-4 text-secondary pt-1" for="customCheck3">$10-$20</label>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox my-4">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck4" name="example4" checked>
+                                                <label class="custom-control-label pl-4 text-secondary pt-1" for="customCheck4">$20-$30</label>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox my-4">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck5" name="example5">
+                                                <label class="custom-control-label pl-4 text-secondary pt-1" for="customCheck5">$30 and over</label>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox my-4">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck6" name="example6">
+                                                <label class="custom-control-label pl-4 text-secondary pt-1" for="customCheck6">My Available Balance</label>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <hr class="m-0" />
+  
+                        <!-- 2. Brand -->
+                        <div class="card rounded-1 border-0 pr-3">                       
+                            <a class="btn btn-block collapsed px-0 py-4 text-left d-flex flex-row justify-content-between" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">                                                                                          
+                                <span class="h5 font-weight-bold text-secondary">Brand</span>
+                                <i class="fa fa-chevron-down d-felx align-self-center text-secondary h5 m-0" aria-hidden="true"></i>
+                            </a>
+                  
+                            <div id="collapseTwo" class="collapse multi-collapse" aria-labelledby="headingTwo" >
+                                <div class="card-body text-info px-0 pt-0">
+                                <div class="row">
+                                    <div class="col-12">                                        
+                                    
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="m-0" />
+  
+                        <!-- 3. Conditions -->
+                        <div class="card rounded-1 border-0 pr-3">                       
+                            <a class="btn btn-block collapsed px-0 py-4 text-left d-flex flex-row justify-content-between" id="heading3" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">                                                                                          
+                                <span class="h5 font-weight-bold text-secondary">Conditions</span>
+                                <i class="fa fa-chevron-down d-felx align-self-center text-secondary h5 m-0" aria-hidden="true"></i>
+                            </a>
+                  
+                            <div id="collapse3" class="collapse multi-collapse" aria-labelledby="heading3" >
+                                <div class="card-body text-info px-0 pt-0">
+                                <div class="row">
+                                    <div class="col-12">                                        
+                                    
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="m-0" />
+
+                         <!-- 4. Order Again -->
+                         <div class="card rounded-1 border-0 pr-3">                       
+                            <a class="btn btn-block collapsed px-0 py-4 text-left d-flex flex-row justify-content-between" id="heading4" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">                                                                                          
+                                <span class="h5 font-weight-bold text-secondary">Order Again</span>
+                                <i class="fa fa-chevron-down d-felx align-self-center text-secondary h5 m-0" aria-hidden="true"></i>
+                            </a>
+                  
+                            <div id="collapse4" class="collapse multi-collapse" aria-labelledby="heading4" >
+                                <div class="card-body text-info px-0 pt-0">
+                                <div class="row">
+                                    <div class="col-12">                                        
+                                    
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="m-0" />
+
+                         <!-- 5. Favorites -->
+                         <div class="card rounded-1 border-0 pr-3">                       
+                            <a class="btn btn-block collapsed px-0 py-4 text-left d-flex flex-row justify-content-between" id="heading5" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">                                                                                          
+                                <span class="h5 font-weight-bold text-secondary">Favorites</span>
+                                <i class="fa fa-chevron-down d-felx align-self-center text-secondary h5 m-0" aria-hidden="true"></i>
+                            </a>
+                  
+                            <div id="collapse5" class="collapse multi-collapse" aria-labelledby="heading5" >
+                                <div class="card-body text-info px-0 pt-0">
+                                <div class="row">
+                                    <div class="col-12">                                        
+                                    
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="m-0" />
+
+                         <!-- 6. Categories -->
+                         <div class="card rounded-1 border-0 pr-3">                       
+                            <a class="btn btn-block px-0 py-4 text-left d-flex flex-row justify-content-between" id="heading6" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">                                                                                          
+                                <span class="h5 font-weight-bold text-secondary">Categories</span>
+                                <i class="fa fa-chevron-up d-felx align-self-center text-secondary h5 m-0" aria-hidden="true"></i>
+                            </a>
+                  
+                            <div id="collapse6" class="collapse multi-collapse show" aria-labelledby="heading6" >
+                                <div class="card-body text-info px-0 pt-0">
+                                <div class="row">
+                                    <div class="col-12">                                        
+                                        <ul class="list-group">
+                                            <li class="list-group-item border-0 px-0 pt-0"><a href="">Category 1</a></li>
+                                            <li class="list-group-item border-0 px-0"><a href="">Category 2</a></li>
+                                            <li class="list-group-item border-0 px-0"><a href="">Category 3</a></li>
+                                            <li class="list-group-item border-0 px-0"><a href="">Category 4</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+            </div>
+
+            <div class="col-12 col-md-9">
+                <!-- Section:  Popular Products -->
+                 <section class="popularProducts text-info">
+                    <div class="section_heading border-bottom d-flex flex-row justify-content-between">                      
+                        <h3 class="h2 m-0 py-4 d-flex flex-row">Category 1
+                            <small class="ml-5 d-flex align-items-end h6 m-0 font-weight-normal">(1-3 of 500 results)</small>
+                        </h3>
+                        <div class="arrow-links h3 d-flex flex-row align-items-end m-0 pb-2">
+                            <div class="dropdown my-2">
+                                <button class="btn btn-outline-white text-decoration-none dropdown-toggle dropdown-bg-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <small class="d-block text-left">Sorty by</small><span class="d-block text-left">A-Z Ascending</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">A-Z Ascending</a>
+                                <a class="dropdown-item" href="#">Z-A Decending</a>
+                                </div>
+                            </div>
+                        </div>                
+                    </div>
+
+                    <div class="section_filterItems d-flex flex-row flex-wrap">
+                        <div class="filter-item">
+                            <span>$10-$20</span>
+                            <button type="button" class="close text-secondary" aria-label="Close">
+                                <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
+                              </button>
+                        </div>
+                        <div class="filter-item">
+                            <span>$20-$30</span>
+                            <button type="button" class="close text-secondary" aria-label="Close">
+                                <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
+                              </button>
+                        </div>
+                    </div>
+
+                    <div class="section_body row py-3 d-flex flex-row flex-wrap">
+                        <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
+                        <div class="card card-product border-0 shadow-md">
+                            <div class="card-header border-info d-flex flex-row pt-3">
+                            <span class="mr-auto">Item Number</span>
+                            <a href="#" class="ml-auto font-weight-bold h4 m-0 text-decoration-none">0001</a>
+                            </div>
+                            <div class="card-body p-0 mt-2">
+                            
+                            <div class="card-image bg-d8 py-2 px-5">
+                                <a href="#">                      
+                                <!-- <img src="./img/img_placeholder.PNG" alt="product_image" class="img-fluid" /> -->
+                                <!-- If above image is not available, we will show below icon -->
+                                <i class="fa fa-picture-o text-info d-flex flex-row p-4 h1 justify-content-center" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="card-fav text-danger">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="card-description p-4">
+                                <p class="m-0">Product Name</p>
+                                <p class="display-4 m-0"><b>$XX.XX</b></p>
+                                <p class="text-success"><b>IN STOCK</b></p>
+                                <button type="button" class="btn btn-primary btn-lg rounded-1 py-2 px-4 my-2"><b>Add to Cart</b></button>
+                            </div>
+        
+                            </div> 
+                        </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
+                        <div class="card card-product border-0 shadow-md">
+                            <div class="card-header border-info d-flex flex-row pt-3">
+                            <span class="mr-auto">Item Number</span>
+                            <a href="#" class="ml-auto font-weight-bold h4 m-0 text-decoration-none">0001</a>
+                            </div>
+                            <div class="card-body p-0 mt-2">
+                            
+                            <div class="card-image bg-d8 py-2 px-5">
+                                <a href="#">                      
+                                <!-- <img src="./img/img_placeholder.PNG" alt="product_image" class="img-fluid" /> -->
+                                <!-- If above image is not available, we will show below icon -->
+                                <i class="fa fa-picture-o text-info d-flex flex-row p-4 h1 justify-content-center" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="card-fav text-danger">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="card-description p-4">
+                                <p class="m-0">Product Name</p>
+                                <p class="display-4 m-0"><b>$XX.XX</b></p>
+                                <p class="text-success"><b>IN STOCK</b></p>
+                                <button type="button" class="btn btn-primary btn-lg rounded-1 py-2 px-4 my-2"><b>Add to Cart</b></button>
+                            </div>
+        
+                            </div> 
+                        </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-3 mb-lg-0">
+                        <div class="card card-product border-0 shadow-md">
+                            <div class="card-header border-info d-flex flex-row pt-3">
+                            <span class="mr-auto">Item Number</span>
+                            <a href="#" class="ml-auto font-weight-bold h4 m-0 text-decoration-none">0001</a>
+                            </div>
+                            <div class="card-body p-0 mt-2">
+                            
+                            <div class="card-image bg-d8 py-2 px-5">
+                                <a href="#">                      
+                                <!-- <img src="./img/img_placeholder.PNG" alt="product_image" class="img-fluid" /> -->
+                                <!-- If above image is not available, we will show below icon -->
+                                <i class="fa fa-picture-o text-info d-flex flex-row p-4 h1 justify-content-center" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="card-fav text-danger">
+                                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="card-description p-4">
+                                <p class="m-0">Product Name</p>
+                                <p class="display-4 m-0"><b>$XX.XX</b></p>
+                                <p class="text-success"><b>IN STOCK</b></p>
+                                <button type="button" class="btn btn-primary btn-lg rounded-1 py-2 px-4 my-2"><b>Add to Cart</b></button>
+                            </div>
+        
+                            </div> 
+                        </div>
+                        </div>                    
+                    </div>          
+                 </section>
+            </div>
+        </div>
+
+       
+      </div>
+
+
+
+    </main>
+    
+    <!-- Footer part goes here -->
+    <footer class="footer mt-auto">
+
+        <!-- Need Help -->
+        <div class="bg-primary text-center text-light py-2">
+          <p class="my-1 h5 font-weight-normal">Need Help? <b>1-800-000-0000</b></p>
+        </div>  
+
+        <!-- App Download links -->
+        <div class="appDownloads text-center py-3">
+          <p class="text-secondary h4">Download our Mobile App</p>
+          <div class="app-download-links d-flex flex-row justify-content-center">
+            <a href="#" class="dlinks apple">Download on the App Store</a>
+            <a href="#" class="dlinks gplay">Get it on Google Play</a>
+          </div>
+        </div>
+
+        <!-- Adspace -->
+        <div class="addspace text-center">
+          <img src="./img/Adspace.svg" class="img-fluid h-100" alt="adspace" />          
+        </div>
+
+        <!-- Footer links : Copyright  |  Terms & Conditions  |  Privacy Policy -->
+        <ul class="nav justify-content-center py-3">
+          <li class="nav-item px-4">
+            <a href=""><u>Copyright &copy; 2021 Convey</u></a>
+          </li>
+          <li class="nav-item px-4">
+            <a href=""><u>Terms & Conditions</u></a>
+          </li>
+          <li class="nav-item px-4">
+            <a href=""><u>Privacy Policy</u></a>
+          </li>
+        </ul>
+
+    </footer>
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  
+  </body>
+</html>

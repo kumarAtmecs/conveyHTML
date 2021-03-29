@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- xZoom CSS -->
+    <link rel="stylesheet" href="./xzoom/xzoom.css" />
+    <!-- Custom CSS over Bootstrap 4.6 -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <title>Product Description</title>
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    <!-- Header: After login -->
+    <header>
+      <!-- Fixed navbar -->
+      <nav
+        class="navbar fixed-top bg-white shadow-sm py-0 navbar-expand-xl navbar-light"
+      >
+        <div class="container">
+          <div class="row d-flex flex-row justify-content-center flex-wrap">
+            <!-- Logo Brand -->
+            <div
+              class="col-12 order-2 col-md-6 order-md-3 col-lg-6 order-lg-1 d-flex flex-row"
+            >
+              <a
+                class="navbar-brand d-inline-flex p-0 mx-auto ml-lg-0"
+                href="#"
+              >
+                <img
+                  src="./img/Convey-logo.svg"
+                  alt="convey-logo"
+                  class="logo"
+                />
+                <div
+                  class="logo-secure align-self-center text-dark d-block d-lg-none"
+                >
+                  <i class="fa fa-lock" aria-hidden="true"></i>
+                  Secure
+                </div>
+              </a>
+            </div>
+
+            <!-- Language & Enlarge -->
+            <div
+              class="col-12 order-1 col-md-12 order-md-1 col-lg-6 order-lg-2 d-flex flex-row align-items-center justify-content-end"
+            >
+              <div class="dropdown my-2">
+                <button
+                  class="btn btn-outline-dark text-decoration-none dropdown-toggle dropdown-icon-toggle btn-sm"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <small class="d-block text-left">Language</small
+                  ><span class="d-block text-left">English</span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">EN</a>
+                  <a class="dropdown-item" href="#">ES</a>
+                </div>
+              </div>
+              <p class="pl-3 m-0">Enlarge:</p>
+              <a
+                href="#"
+                class="d-flex text-secondary border border-secondary rounded-circle ml-1 size-35 text-decoration-none"
+              >
+                <i
+                  class="fa fa-minus align-self-center mx-auto"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="d-flex text-secondary border border-secondary rounded-circle ml-1 size-35 text-decoration-none"
+              >
+                <i
+                  class="fa fa-plus align-self-center mx-auto"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </div>
+
+            <!-- Search -->
+            <div
+              class="col-6 order-3 col-md-3 order-md-2 col-lg-6 order-lg-3 py-1 d-flex flex-row"
+            >
+              <!-- Toggle Navigation Menu Icon -->
+              <button
+                class="navbar-toggler mr-2 text-secondary border-0 pl-0"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarCollapse"
+                aria-controls="navbarCollapse"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa fa-bars icon-size" aria-hidden="true"></i>
+              </button>
+
+              <div
+                class="input-group has-search d-flex flex-row align-items-center"
+              >
+                <button
+                  class="btn btn-link d-block d-lg-none text-decoration-none"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  <span
+                    class="fa fa-search text-secondary icon-size d-block d-lg-none"
+                  ></span>
+                </button>
+
+                <span
+                  class="fa fa-search form-control-feedback text-secondary d-none d-lg-block"
+                ></span>
+                <input
+                  type="text"
+                  class="form-control bg-light rounded-left d-none d-lg-block"
+                  placeholder="Search by product or item number"
+                />
+                <div class="input-group-append d-none d-xl-block">
+                  <button
+                    class="btn btn-primary px-4 font-weight-bold"
+                    type="button"
+                  >
+                    Search
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Menu : Help | My Account | Shopping Cart -->
+            <div
+              class="col-6 order-4 col-md-3 order-md-4 col-lg-6 order-lg-4 d-flex justify-content-end"
+            >
+              <ul class="navbarNav d-flex flex-row align-items-center">
+                <li class="nav-item d-none d-lg-block">
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-link text-secondary font-weight-bold text-decoration-none dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Help
+                    </button>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item myAccount">
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-link text-secondary font-weight-bold text-decoration-none dropdown-toggle d-flex flex-row"
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <i
+                        class="fa fa-user icon-size d-md-block d-lg-none"
+                        aria-hidden="true"
+                      ></i>
+                      <span class="d-none d-lg-block">My Account</span>
+                    </button>
+                    <div
+                      class="dropdown-menu dropdown-menu-right"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item pr-0">
+                  <a
+                    class="nav-link text-secondary font-weight-bold pr-0 pl-0 d-flex flex-row align-items-center"
+                    href="#"
+                  >
+                    <i
+                      class="fa fa-shopping-cart icon-size m-0"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="pl-2 d-none d-xl-block">Shopping Cart</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Menu : Shop | Orders | Health & Wellness | Benefits -->
+            <div
+              class="col-12 order-5 col-md-12 order-md-5 col-lg-12 order-lg-5 py-md-0 py-lg-2"
+            >
+              <div class="collapse pb-2" id="collapseExample">
+                <input
+                  type="text"
+                  class="form-control bg-light rounded-left"
+                  placeholder="Find what your looking for"
+                />
+              </div>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbarNav d-flex flex-column flex-md-row">
+                  <li class="nav-item pl-0">
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-link text-secondary font-weight-bold text-decoration-none dropdown-toggle pl-0"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Shop
+                      </button>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item d-inline-flex">
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-link text-secondary font-weight-bold text-decoration-none dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Orders
+                      </button>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-secondary font-weight-bold" href="#"
+                      >Health & Wellness</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-secondary font-weight-bold" href="#"
+                      >Benefits</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="main-signin--after">
+      <div class="container py-2">
+        <!-- Breadcrumbs -->
+        <div class="row">
+          <div class="col">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb bg-white px-0">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  breadcrumbs
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Product - Image and details -->
+        <div class="row text-info">
+          <div class="col-12 col-md-4 col-lg-5">
+
+            <!-- xZoom content  -->
+            <div class="xzoom-container">
+            <img
+                class="xzoom w-100 rounded-2"
+                id="xzoom-default"
+                height="300"
+                src="./xzoom/images/preview/01_b_car.jpg"
+                xoriginal="./xzoom/images/original/01_b_car.jpg"
+            />
+            <div class="xzoom-thumbs">
+                <p class="font-weight-bold h6 m-0 text-uppercase mt-4 mb-1">Roll over image to zoom</p>
+                <div class="d-flex flex-row justify-content-around">
+                    <a href="./xzoom/images/original/01_b_car.jpg"
+                        ><img
+                        class="xzoom-gallery rounded col-9 p-0"                      
+                        src="./xzoom/images/thumbs/01_b_car.jpg"
+                        height="60"
+                        xpreview="./xzoom/images/preview/01_b_car.jpg"                      
+                    /></a>
+                    <a href="./xzoom/images/original/02_o_car.jpg"
+                        ><img
+                        class="xzoom-gallery rounded col-9 p-0"
+                        height="60"                     
+                        src="./xzoom/images/preview/02_o_car.jpg"                      
+                    /></a>
+                    <a href="./xzoom/images/original/03_r_car.jpg"
+                        ><img
+                        class="xzoom-gallery rounded col-9 p-0" 
+                        height="60"                     
+                        src="./xzoom/images/preview/03_r_car.jpg"                      
+                    /></a>
+                    <a href="./xzoom/images/original/04_g_car.jpg"
+                        ><img
+                        class="xzoom-gallery rounded col-9 p-0"   
+                        height="60"                   
+                        src="./xzoom/images/preview/04_g_car.jpg"                      
+                    /></a>
+                </div>
+            </div>
+            </div>
+            
+          </div>
+          <div class="col-12 col-md-8 col-lg-7">
+            <div class="row">
+              <!-- Item Name and Price -->
+              <div class="col-12 col-md-6 col-lg-7">
+                <h1 class="font-weight-bold display-6 pb-3">
+                  <small class="d-block h5 pb-2">Item Number 00001</small>
+                  Item Name
+                </h1>
+                <hr
+                  class="col-12 col-sm-10 d-flex flex-row justify-content-center mt-4"
+                />
+                <p class="display-3 mb-2 line-height-1 d-flex flex-row justify-content-top font-weight-bold"><small>$15.00</small></p>
+                <p class="text-success text-uppercase font-weight-bold">
+                  In Stock
+                </p>
+                <p class="mt-5">
+                  Maecenas faucibus mollis interdum. Cum sociis natoque et.
+                </p>
+                <div class="benefit-info mt-4 col-12 col-md-7 p-0">
+                  <p class="d-flex flex-row m-0">
+                    <i
+                      class="fa fa-info-circle pr-2 pt-1 text-secondary"
+                      aria-hidden="true"
+                    ></i>
+                    <small
+                      >Maecenas faucibaecenas faucibus enas faucibaecenas
+                      faucibus mollis</small
+                    >
+                  </p>
+                </div>
+              </div>
+              <!-- Benefit & Balance -->
+              <div class="col-12 col-md-6 col-lg-5 mb-4">
+                <div class="card shadow-md rounded-2 border-0">
+                  <div class="currentBenefit bg-d8 p-3 rounded-2-top">
+                    <div class="form-group m-0">
+                      <label for="exampleInputEmail1" class="mb-2"
+                        >Current Benefit</label
+                      >
+                      <div class="dropdown">
+                        <a
+                          class="btn dropdown-toggle custom-dropdown text-left"
+                          href="#"
+                          role="button"
+                          id="dropdownMenuLink"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          OTC Benefit
+                        </a>
+
+                        <div
+                          class="dropdown-menu w-100 p-0"
+                          aria-labelledby="dropdownMenuLink"
+                          style=""
+                        >
+                          <a
+                            class="dropdown-item d-flex flex-row justify-content-between border-bottom pt-2"
+                            href="#"
+                          >
+                            <div class="">OTC Benefit</div>
+                            <div class="text-success font-weight-bold h5">
+                              $80.00
+                            </div>
+                          </a>
+                          <a
+                            class="dropdown-item d-flex flex-row justify-content-between"
+                            href="#"
+                          >
+                            <div class="">Chronic Care Cancer Benefit</div>
+                            <div class="text-success font-weight-bold h5">
+                              $100.00
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-column p-4 pt-4">
+                    <div class="align-self-center">
+                      <p class="h1 text-success line-height-1 font-weight-normal text-center">
+                        $80.00
+                      </p>
+                      <p class="text-secondary h5 mb-4 pb-3 font-weight-normal">
+                        Available Balance
+                        <a
+                          tabindex="0"
+                          id="balance-breakdown"
+                          data-toggle="popover"
+                          data-original-title=""
+                          title=""
+                        >
+                          <i
+                            class="fa fa-info-circle pr-2 pt-1 text-secondary"
+                            aria-hidden="true"
+                          ></i>
+                        </a>
+                      </p>
+                    </div>
+
+                    <p class="m-0">Money Spent - $20</p>
+                    <p class="m-0 h3 pl-1 text-success line-height-1">
+                      <i
+                        class="fa fa-caret-down m-0 p-0"
+                        aria-hidden="true"
+                      ></i>
+                    </p>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-success rounded"
+                        role="progressbar"
+                        style="width: 20%"
+                        aria-valuenow="20"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <p class="text-right">$100.00</p>
+                  </div>
+
+                  <div class="px-4 mb-4">
+                    <div class="form-group mb-4">
+                      <label for="state" class="mb-1"
+                        >Quantity <small>(Limit 3)</small></label
+                      >
+                      <select class="form-control form-control-lg" id="state">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-lg btn-block py-2 font-weight-bold"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="pt-3 pb-2">
+                  <hr />
+                </div>
+                <div class="addToFav">
+                  <a
+                    href="#"
+                    class="card-fav text-danger text-decoration-none d-flex flex-row"
+                    id="addToFav"
+                  >
+                    <span
+                      class="border rounded-circle share-circle d-flex flex-row justify-content-center"
+                    >
+                      <i
+                        class="fa fa-heart-o h3 m-0 d-flex flex-row align-items-center"
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                    <span
+                      class="h5 m-0 text-secondary pl-3 font-weight-bold d-flex flex-row align-items-center"
+                      >Add to Favorites</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Description -->
+        <div class="row text-info mb-4">
+          <div class="col-12 col-md-10 mx-auto mb-4">
+            <h3 class="h2 m-0 py-4 d-flex flex-row">Description</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nosturud exercitation ullamco laboris
+              nisi ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nosturud exercitation ullamco
+              laboris nisi ut.Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nosturud exercitation
+              ullamco laboris nisi ut.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <hr
+            class="col-12 col-sm-3 d-flex flex-row justify-content-center py-3 mt-2"
+          />
+        </div>
+        <div class="row text-info">
+          <div class="col-12 col-md-10 mx-auto">
+            <h3 class="h2 m-0 pb-4 d-flex flex-row">Ingredients</h3>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <h4 class="mb-3">Active Ingredients</h4>
+                <p>Ethyl alcohol - 63% (Antiseptic)</p>
+              </div>
+              <div class="col-12 col-md-6">
+                <h4 class="mb-3">Inactive Ingredients</h4>
+                <p>Acrylates/C10-30 alkyl acrylate</p>
+                <p>
+                  crosspolymer, benzophenone-4,<br />fragrance, <br />glycerin,
+                  <br />tocopherol, <br />water
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <hr
+            class="col-12 col-sm-3 d-flex flex-row justify-content-center py-4 mt-5"
+          />
+        </div>
+        <div class="row text-info pb-5">
+          <div class="col-12 col-md-10 mx-auto pb-4">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div
+                  class="bg-light h-100 rounded-2 d-flex flex-row justify-content-center"
+                >
+                  <!-- Sample YouTube video here, we can un-comment -->
+                  <!-- <iframe
+                        width="100%"
+                    height="280"
+                    src="https://www.youtube.com/embed/5p6cT_5xOLo"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    ></iframe> -->
+
+                  <!-- If above image is not available, we will show below icon -->
+                  <i
+                    class="fa fa-play text-info d-flex flex-row h1 align-items-center"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <h4 class="mb-3">Title</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nosturud exercitation ullamco
+                  laboris nisi ut.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section: Similar Products -->
+        <section class="similarProducts text-info pb-5">
+          <div
+            class="section_heading border-bottom d-flex flex-row justify-content-between"
+          >
+            <h3 class="h3 m-0 py-4 d-flex flex-row">Similar Products</h3>
+            <div
+              class="arrow-links h3 d-flex flex-row align-items-end m-0 mr-3 pb-2"
+            >
+              <a
+                href="#"
+                class="btn btn-link disabled m-0 p-0 btn-xl"
+                disabled=""
+                ><i class="fa fa-arrow-circle-left" aria-hidden="true"></i
+              ></a>
+              <a href="#" class="btn btn-link btn-xl text-secondary p-0 ml-2"
+                ><i class="fa fa-arrow-circle-right" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+          <div class="section_body py-3 d-flex flex-row flex-wrap">
+            <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+              <div class="card card-product border-0 shadow-md">
+                <div class="card-header border-info d-flex flex-row pt-3">
+                  <span class="mr-auto">Item Number</span>
+                  <a
+                    href="#"
+                    class="ml-auto font-weight-bold h4 m-0 text-decoration-none"
+                    >0001</a
+                  >
+                </div>
+                <div class="card-body p-0 mt-2">
+                  <div class="card-image bg-d8 py-2 px-5">
+                    <a href="#">
+                      <!-- <img src="./img/img_placeholder.PNG" alt="product_image" class="img-fluid" /> -->
+                      <!-- If above image is not available, we will show below icon -->
+                      <i
+                        class="fa fa-picture-o text-info d-flex flex-row p-4 h1 justify-content-center"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                    <a href="#" class="card-fav text-danger">
+                      <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </a>
+                  </div>
+
+                  <div class="card-description p-4">
+                    <p class="m-0">Product Name</p>
+                    <p class="display-4 m-0"><b>$XX.XX</b></p>
+                    <p class="text-success"><b>IN STOCK</b></p>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-lg rounded-1 py-2 px-4 my-2"
+                    >
+                      <b>Add to Cart</b>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+              <div class="card card-product border-0 shadow-md">
+                <div class="card-header border-info d-flex flex-row pt-3">
+                  <span class="mr-auto">Item Number</span>
+                  <a
+                    href="#"
+                    class="ml-auto font-weight-bold h4 m-0 text-decoration-none"
+                    >0001</a
+                  >
+                </div>
+                <div class="card-body p-0 mt-2">
+                  <div class="card-image bg-d8 py-2 px-5">
+                    <a href="#">
+                      <!-- <img src="./img/img_placeholder.PNG" alt="product_image" class="img-fluid" /> -->
+                      <!-- If above image is not available, we will show below icon -->
+                      <i
+                        class="fa fa-picture-o text-info d-flex flex-row p-4 h1 justify-content-center"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                    <a href="#" class="card-fav text-danger">
+                      <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </a>
+                  </div>
+
+                  <div class="card-description p-4">
+                    <p class="m-0">Product Name</p>
+                    <p class="display-4 m-0"><b>$XX.XX</b></p>
+                    <p class="text-success"><b>IN STOCK</b></p>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-lg rounded-1 py-2 px-4 my-2"
+                    >
+                      <b>Add to Cart</b>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+              <div class="card card-product border-0 shadow-md">
+                <div class="card-header border-info d-flex flex-row pt-3">
+                  <span class="mr-auto">Item Number</span>
+                  <a
+                    href="#"
+                    class="ml-auto font-weight-bold h4 m-0 text-decoration-none"
+                    >0001</a
+                  >
+                </div>
+                <div class="card-body p-0 mt-2">
+                  <div class="card-image bg-d8 py-2 px-5">
+                    <a href="#">
+                      <!-- <img src="./img/img_placeholder.PNG" alt="product_image" class="img-fluid" /> -->
+                      <!-- If above image is not available, we will show below icon -->
+                      <i
+                        class="fa fa-picture-o text-info d-flex flex-row p-4 h1 justify-content-center"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                    <a href="#" class="card-fav text-danger">
+                      <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </a>
+                  </div>
+
+                  <div class="card-description p-4">
+                    <p class="m-0">Product Name</p>
+                    <p class="display-4 m-0"><b>$XX.XX</b></p>
+                    <p class="text-success"><b>IN STOCK</b></p>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-lg rounded-1 py-2 px-4 my-2"
+                    >
+                      <b>Add to Cart</b>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+              <div class="card card-product border-0 shadow-md">
+                <div class="card-header border-info d-flex flex-row pt-3">
+                  <span class="mr-auto">Item Number</span>
+                  <a
+                    href="#"
+                    class="ml-auto font-weight-bold h4 m-0 text-decoration-none"
+                    >0001</a
+                  >
+                </div>
+                <div class="card-body p-0 mt-2">
+                  <div class="card-image bg-d8 py-2 px-5">
+                    <a href="#">
+                      <!-- <img src="./img/img_placeholder.PNG" alt="product_image" class="img-fluid" /> -->
+                      <!-- If above image is not available, we will show below icon -->
+                      <i
+                        class="fa fa-picture-o text-info d-flex flex-row p-4 h1 justify-content-center"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                    <a href="#" class="card-fav text-danger">
+                      <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </a>
+                  </div>
+
+                  <div class="card-description p-4">
+                    <p class="m-0">Product Name</p>
+                    <p class="display-4 m-0"><b>$XX.XX</b></p>
+                    <p class="text-success"><b>IN STOCK</b></p>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-lg rounded-1 py-2 px-4 my-2"
+                    >
+                      <b>Add to Cart</b>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section: Order Again -->
+        <section class="orderAgain text-info pb-5">
+          <div
+            class="section_heading border-bottom d-flex flex-row justify-content-between"
+          >
+            <h3 class="h3 m-0 py-4 d-flex flex-row">Order Again</h3>
+          </div>
+          <div class="section_body py-3 d-flex flex-row flex-wrap">
+            <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+              <div class="card card-product border-0 shadow-md">
+                <div class="card-header border-info d-flex flex-row pt-3">
+                  <span class="mr-auto">Item Number</span>
+                  <a
+                    href="#"
+                    class="ml-auto font-weight-bold h4 m-0 text-decoration-none"
+                    >0001</a
+                  >
+                </div>
+                <div class="card-body p-0 mt-2">
+                  <div class="card-image bg-d8 py-2 px-5">
+                    <a href="#">
+                      <!-- <img src="./img/img_placeholder.PNG" alt="product_image" class="img-fluid" /> -->
+                      <!-- If above image is not available, we will show below icon -->
+                      <i
+                        class="fa fa-picture-o text-info d-flex flex-row p-4 h1 justify-content-center"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                    <a href="#" class="card-fav text-danger">
+                      <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </a>
+                  </div>
+
+                  <div class="card-description p-4">
+                    <p class="m-0">Product Name</p>
+                    <p class="display-4 m-0"><b>$XX.XX</b></p>
+                    <p class="text-success"><b>IN STOCK</b></p>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-lg rounded-1 py-2 px-4 my-2"
+                    >
+                      <b>Add to Cart</b>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+              <div class="card card-product border-0 shadow-md">
+                <div class="card-header border-info d-flex flex-row pt-3">
+                  <span class="mr-auto">Item Number</span>
+                  <a
+                    href="#"
+                    class="ml-auto font-weight-bold h4 m-0 text-decoration-none"
+                    >0001</a
+                  >
+                </div>
+                <div class="card-body p-0 mt-2">
+                  <div class="card-image bg-d8 py-2 px-5">
+                    <a href="#">
+                      <!-- <img src="./img/img_placeholder.PNG" alt="product_image" class="img-fluid" /> -->
+                      <!-- If above image is not available, we will show below icon -->
+                      <i
+                        class="fa fa-picture-o text-info d-flex flex-row p-4 h1 justify-content-center"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                    <a href="#" class="card-fav text-danger">
+                      <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </a>
+                  </div>
+
+                  <div class="card-description p-4">
+                    <p class="m-0">Product Name</p>
+                    <p class="display-4 m-0"><b>$XX.XX</b></p>
+                    <p class="text-success"><b>IN STOCK</b></p>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-lg rounded-1 py-2 px-4 my-2"
+                    >
+                      <b>Add to Cart</b>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+              <div class="card card-product border-0 shadow-md">
+                <div class="card-header border-info d-flex flex-row pt-3">
+                  <span class="mr-auto">Item Number</span>
+                  <a
+                    href="#"
+                    class="ml-auto font-weight-bold h4 m-0 text-decoration-none"
+                    >0001</a
+                  >
+                </div>
+                <div class="card-body p-0 mt-2">
+                  <div class="card-image bg-d8 py-2 px-5">
+                    <a href="#">
+                      <!-- <img src="./img/img_placeholder.PNG" alt="product_image" class="img-fluid" /> -->
+                      <!-- If above image is not available, we will show below icon -->
+                      <i
+                        class="fa fa-picture-o text-info d-flex flex-row p-4 h1 justify-content-center"
+                        aria-hidden="true"
+                      ></i>
+                    </a>
+                    <a href="#" class="card-fav text-danger">
+                      <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </a>
+                  </div>
+
+                  <div class="card-description p-4">
+                    <p class="m-0">Product Name</p>
+                    <p class="display-4 m-0"><b>$XX.XX</b></p>
+                    <p class="text-success"><b>IN STOCK</b></p>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn-lg rounded-1 py-2 px-4 my-2"
+                    >
+                      <b>Add to Cart</b>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Section: Ask a question -->
+      <section class="askAquestion bg-light py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-8 pb-2">
+              <h2
+                class="display-4 text-info font-weight-bold m-0 line-height-1"
+              >
+                Ask a question
+              </h2>
+
+              <div class="form-group mt-5">
+                <label for="exampleFormControlTextarea1"
+                  >Ask your Question</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-md-5 mb-4">
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1"
+                      >Enter your name</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                class="btn btn-primary btn-lg px-4 font-weight-bold"
+              >
+                Submit Question
+              </button>
+              <button
+                type="button"
+                class="btn btn-link btn-lg px-6 font-weight-bold text-decoration-none"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer part goes here -->
+    <footer class="footer mt-auto">
+      <!-- Need Help -->
+      <div class="bg-primary text-center text-light py-2">
+        <p class="my-1 h5 font-weight-normal">
+          Need Help? <b>1-800-000-0000</b>
+        </p>
+      </div>
+
+      <!-- App Download links -->
+      <div class="appDownloads text-center py-3">
+        <p class="text-secondary h4">Download our Mobile App</p>
+        <div class="app-download-links d-flex flex-row justify-content-center">
+          <a href="#" class="dlinks apple">Download on the App Store</a>
+          <a href="#" class="dlinks gplay">Get it on Google Play</a>
+        </div>
+      </div>
+
+      <!-- Adspace -->
+      <div class="addspace text-center">
+        <img src="./img/Adspace.svg" class="img-fluid h-100" alt="adspace" />
+      </div>
+
+      <!-- Footer links : Copyright  |  Terms & Conditions  |  Privacy Policy -->
+      <ul class="nav justify-content-center py-3">
+        <li class="nav-item px-4">
+          <a href=""><u>Copyright &copy; 2021 Convey</u></a>
+        </li>
+        <li class="nav-item px-4">
+          <a href=""><u>Terms & Conditions</u></a>
+        </li>
+        <li class="nav-item px-4">
+          <a href=""><u>Privacy Policy</u></a>
+        </li>
+      </ul>
+    </footer>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./xzoom/xzoom.js"></script>
+    <script>
+      (function ($) {
+        $(document).ready(function () {
+          $(".xzoom, .xzoom-gallery").xzoom({
+            zoomWidth: 400,
+            tint: "#333",
+            Xoffset: 15,
+          });
+        });
+      })(jQuery);
+    </script>
+  </body>
+</html>

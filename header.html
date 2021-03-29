@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS over Bootstrap 4.6 -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Header</title>
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    <!-- Header: After login -->
+    <header>     
+      <!-- Fixed navbar -->      
+        <nav class="navbar fixed-top bg-white shadow-sm py-0  navbar-expand-xl navbar-light">
+          <div class="container">   
+              <div class="d-flex flex-row justify-content-center flex-wrap">
+                  
+                  <!-- Logo Brand -->
+                  <div class="col-12 order-2 col-md-6 order-md-3 col-lg-6 order-lg-1 d-flex flex-row">
+                    <a class="navbar-brand d-inline-flex p-0 mx-auto ml-lg-0" href="#">
+                      <img src="./img/Convey-logo.svg" alt="convey-logo" class="logo">
+                      <div class="logo-secure align-self-center text-dark d-block d-lg-none">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        Secure
+                      </div>
+                    </a>
+                  </div>
+                  
+                  <!-- Language & Enlarge -->
+                  <div class="col-12 order-1 col-md-12 order-md-1 col-lg-6 order-lg-2 d-flex flex-row align-items-center justify-content-end">                     
+                      <div class="dropdown my-2">
+                        <button class="btn btn-outline-dark text-decoration-none dropdown-toggle dropdown-icon-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <small class="d-block text-left">Language</small><span class="d-block text-left">English</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">EN</a>
+                          <a class="dropdown-item" href="#">ES</a>
+                        </div>
+                      </div>
+                      <p class="pl-3 m-0">Enlarge:</p>
+                      <a href="#" class="d-flex text-secondary border border-secondary rounded-circle ml-1 size-35 text-decoration-none">
+                        <i class="fa fa-minus align-self-center mx-auto" aria-hidden="true"></i>
+                      </a>
+                      <a href="#" class="d-flex text-secondary border border-secondary rounded-circle ml-1 size-35 text-decoration-none">
+                        <i class="fa fa-plus align-self-center mx-auto" aria-hidden="true"></i>
+                      </a>
+                  </div>                  
+                  
+                  <!-- Search -->
+                  <div class="col-6 order-3 col-md-3 order-md-2 col-lg-6 order-lg-3 py-1 d-flex flex-row">                      
+                    <!-- Toggle Navigation Menu Icon -->
+                    <button class="navbar-toggler mr-2 text-secondary border-0 pl-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fa fa-bars icon-size" aria-hidden="true"></i>
+                    </button>
+
+                    <div class="input-group has-search d-flex flex-row align-items-center">
+                      <button class="btn btn-link d-block d-lg-none text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <span class="fa fa-search text-secondary icon-size d-block d-lg-none" ></span>
+                      </button>                      
+                     
+                      <span class="fa fa-search form-control-feedback text-secondary d-none d-lg-block"></span>
+                      <input type="text" class="form-control bg-light rounded-left d-none d-lg-block" placeholder="Search by product or item number">
+                      <div class="input-group-append d-none d-xl-block">
+                        <button class="btn btn-primary px-4 font-weight-bold" type="button">
+                          Search
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Menu : Help | My Account | Shopping Cart -->
+                  <div class="col-6 order-4 col-md-3 order-md-4 col-lg-6 order-lg-4 d-flex justify-content-end">
+                    <ul class="navbarNav d-flex flex-row align-items-center">
+                      <li class="nav-item d-none d-lg-block">
+                        <div class="dropdown">
+                          <button class="btn btn-link text-secondary font-weight-bold text-decoration-none dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Help
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="nav-item myAccount">
+                        <div class="dropdown">
+                          <button class="btn btn-link text-secondary font-weight-bold text-decoration-none dropdown-toggle d-flex flex-row" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user icon-size d-md-block d-lg-none" aria-hidden="true"></i>
+                            <span class="d-none d-lg-block">My Account</span>
+                          </button>
+                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="nav-item pr-0">
+                        <a class="nav-link text-secondary font-weight-bold pr-0 pl-0 d-flex flex-row align-items-center" href="#">
+                          <i class="fa fa-shopping-cart icon-size m-0" aria-hidden="true"></i>
+                          <span class="pl-2 d-none d-xl-block">Shopping Cart</span>
+                        </a>
+                      </li>
+                    </ul>
+ 
+                  </div>
+
+                  <!-- Menu : Shop | Orders | Health & Wellness | Benefits -->
+                  <div class="col-12 order-5 col-md-12 order-md-5 col-lg-12 order-lg-5  py-md-0 py-lg-2">     
+                    <div class="collapse pb-2" id="collapseExample">
+                      <input type="text" class="form-control bg-light rounded-left" placeholder="Find what your looking for">
+                    </div>             
+                    <div class="collapse navbar-collapse" id="navbarCollapse">                   
+                        <ul class="navbarNav d-flex flex-column flex-md-row">
+                          <li class="nav-item pl-0">
+                            <div class="dropdown">
+                              <button class="btn btn-link text-secondary font-weight-bold text-decoration-none dropdown-toggle pl-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Shop
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="nav-item d-inline-flex">
+                            <div class="dropdown">
+                              <button class="btn btn-link text-secondary font-weight-bold text-decoration-none dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Orders
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-secondary font-weight-bold" href="#">Health & Wellness</a>
+                          </li> 
+                          <li class="nav-item">
+                            <a class="nav-link text-secondary font-weight-bold" href="#">Benefits</a>
+                          </li>   
+                        </ul>                        
+                    </div>                  
+                  </div>
+
+              </div>
+          </div>
+
+
+        </nav>
+      </header>
+
+
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
