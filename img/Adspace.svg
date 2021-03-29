@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1199px" height="120px" viewBox="0 0 1199 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>93449E42-8901-47C0-A003-819C95FCE6C0</title>
+    <g id="UX-Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-Onboaring-Login-1" transform="translate(0.000000, -1125.000000)">
+            <g id="Pages/Footer" transform="translate(-0.500000, 955.000000)">
+                <g id="Footer/1200---1024-px/Adspace" transform="translate(0.779221, 170.000000)">
+                    <rect id="Rectangle-Copy-4" fill="#D8D8D8" x="0" y="0" width="1198.44156" height="120"></rect>
+                    <g id="Empty-Image" transform="translate(576.622857, 18.000000)">
+                        <path d="M7.99999952,0 L34.0000005,0 C38.4182782,-8.11624453e-16 42,3.58172179 42,7.99999952 L42,34.0000005 C42,38.4182782 38.4182782,42 34.0000005,42 L7.99999952,42 C3.58172179,42 5.41082969e-16,38.4182782 0,34.0000005 L0,7.99999952 C-5.41082969e-16,3.58172179 3.58172179,8.11624453e-16 7.99999952,0 Z" id="BG" fill="#FFFFFF"></path>
+                        <polygon id="Fill" fill="#F0F0F0" points="17.499999 34.9999979 17.499999 27.9999983 26.2499984 17.499999 34.9999979 27.9999983 34.9999979 34.9999979"></polygon>
+                        <path d="M15.7499991,24.4999985 L24.4999996,34.9999985 L6.99999958,34.9999985 L15.7499991,24.4999985 Z M10.4999996,6.99999958 C12.4328743,6.99999958 13.9999996,8.56712449 13.9999996,10.4999996 C13.9999996,12.4328743 12.4328743,13.9999996 10.4999996,13.9999996 C8.56712449,13.9999996 6.99999958,12.4328743 6.99999958,10.4999996 C6.99999958,8.56712449 8.56712449,6.99999958 10.4999996,6.99999958 Z" id="Icon-Image-Placeholder" fill="#979797" fill-rule="nonzero"></path>
+                    </g>
+                    <text id="Ad-Space" font-family="Roboto-Bold, Roboto" font-size="23" font-weight="bold" fill="#5A5A5A">
+                        <tspan x="550.216629" y="91">Ad Space</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
